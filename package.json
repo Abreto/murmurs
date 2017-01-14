@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Abreto/murmurs#readme",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "jsonfile": "^2.4.0"
   }
 }
