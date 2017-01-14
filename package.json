@@ -1,0 +1,23 @@
+{
+  "name": "murmurs",
+  "version": "0.1.0",
+  "description": "A light system to manage and present extracts or notes.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Abreto/murmurs.git"
+  },
+  "author": "Abreto Fu <m@abreto.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Abreto/murmurs/issues"
+  },
+  "homepage": "https://github.com/Abreto/murmurs#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
