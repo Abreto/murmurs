@@ -1,4 +1,4 @@
 
 exports = module.exports = {
-    storage: __dirname + '/storage'    /* storage dir should end without '/' */
+    storage: path.join(__dirname , '/storage')
 };

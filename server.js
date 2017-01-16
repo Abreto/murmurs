@@ -3,8 +3,9 @@ var express = require('express');
 var cors = require('cors');
 var bodyParser = require('body-parser');
 var config = require('./configure');
+var settings = require('./settings');
 
-var mm = new murmurs( require('./settings') );
+var mm = new murmurs( settings );
 var app = express();
 
 app.use(cors({origin:config.siteurl}));
@@ -16,7 +17,7 @@ app.get(/^\/(\d+)$/, function (req,res) {
 
 app.post('/private', function (req,res) {
     console.log(req.body);
-    if( req.body.p != config.passphrase )
+    if( req.body.p !== config.passphrase )
     {
         console.log('Failed login attempt');
         res.json({m:'Access Denied.'});
