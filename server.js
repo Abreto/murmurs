@@ -24,7 +24,6 @@ app.post('/private', function (req,res) {
     }
     else
     {
-        console.log('action: ' + req.body.a);
         switch(req.body.a)
         {
         case 'p':
