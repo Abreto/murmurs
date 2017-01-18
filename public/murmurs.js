@@ -44,5 +44,7 @@ function load_murmurs()
         for(var i = 0;i < data.length;++i)
             if( data[i] )
                 present_murmur(format_time_string(data[i].t), data[i].s, marked(data[i].c));
+    }).fail(function (){
+        $("#murmurs-container").html('<div class="alert alert-danger" role="alert">Failed to connect to server. Please refresh this page to reload.</div>');
     });
 }
