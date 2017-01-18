@@ -1,4 +1,4 @@
-var api = 'http://localhost:2017';
+var api = 'http://hostname:port';
 
 var nmurmurs = 0;
 function present_murmur(time, source, content)
